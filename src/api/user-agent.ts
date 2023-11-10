@@ -123,7 +123,7 @@ export class UserAgent {
 
     // initialize logger & logger factory
     this.loggerFactory = new LoggerFactory();
-    this.logger = this.loggerFactory.getLogger("sip.UserAgent");
+    this.logger = this.loggerFactory.getLogger("sip.UserAgent-------");
     this.loggerFactory.builtinEnabled = this.options.logBuiltinEnabled;
     this.loggerFactory.connector = this.options.logConnector as (
       level: string,

@@ -40,7 +40,7 @@ export class SimpleUser {
 
     // Copy options
     this.options = { ...options };
-
+    console.warn("HELLOOOOOOOO-----");
     // Session manager options
     const sessionManagerOptions: SessionManagerOptions = {
       aor: this.options.aor,
@@ -75,7 +75,7 @@ export class SimpleUser {
     this.sessionManager = new SessionManager(server, sessionManagerOptions);
 
     // Use the SIP.js logger
-    this.logger = this.sessionManager.userAgent.getLogger("sip.SimpleUser");
+    this.logger = this.sessionManager.userAgent.getLogger("sip.SimpleUser-----");
   }
 
   /**
